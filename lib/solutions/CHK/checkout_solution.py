@@ -16,6 +16,15 @@ class CheckoutSolution:
 
         #calculate cost of SKU A items, 50 each and 3 for 130
         a = items['A']
-        total += (a//3)*130 + (a%3)*50
+        totalCost += (a//3)*130 + (a%3)*50
+        #calculate cost of SKU B items, 30 each and 2 for 45
+        b = items['B']
+        totalCost += (b//2)*45 + (b%2)*30
 
-        b
+        totalCost += items['C']*20
+
+        totalCost += items['D'] * 15
+
+        return totalCost
+
+
