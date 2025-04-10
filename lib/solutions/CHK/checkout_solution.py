@@ -3,7 +3,9 @@ class CheckoutSolution:
 
     # skus = unicode string
     def checkout(self, skus):
-        
+        if not isinstance(skus, str):
+            return -1
+         
         #initalise the counts of each item
         items = {'A':0,'B':0,'C':0,'D':0,'E':0}
         #go through each item iteratively and increment
@@ -29,7 +31,7 @@ class CheckoutSolution:
             b = 0
         else:
             b -= freeB
-        total += (b//2)*45 + (b%2)*30
+        totalCost += (b//2)*45 + (b%2)*30
         
         totalCost += items['C']*20
 
@@ -38,4 +40,5 @@ class CheckoutSolution:
         totalCost += items['E'] * 40
 
         return totalCost
+
 
