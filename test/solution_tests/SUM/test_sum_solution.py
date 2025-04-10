@@ -9,4 +9,4 @@ class TestSum():
         assert SumSolution().compute(0,5) == 5
 
     def test_sum2(self):
-        assert SumSolution().compute(5, 14) == 14
+        assert SumSolution().compute(5, 14) == 19
