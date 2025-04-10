@@ -25,8 +25,12 @@ class CheckoutSolution:
         b = items['B']
         e = items['E']
         freeB =  e//2
+        if (b - freeB) < 0:
+            b = 0
+        else:
+            b -= freeB
+        total += (b//2)*45 + (b%2)*30
         
-
         totalCost += items['C']*20
 
         totalCost += items['D'] * 15
@@ -34,6 +38,7 @@ class CheckoutSolution:
         totalCost += items['E'] * 40
 
         return totalCost
+
 
 
 
