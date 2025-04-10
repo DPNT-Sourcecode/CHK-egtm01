@@ -5,7 +5,7 @@ class CheckoutSolution:
     def checkout(self, skus):
         
         #initalise the counts of each item
-        items = {'A':0,'B':0,'C':0,'D':0}
+        items = {'A':0,'B':0,'C':0,'D':0,'E':0}
         #go through each item iteratively and increment
         for item in skus:
             if item not in items:
@@ -14,7 +14,7 @@ class CheckoutSolution:
 
         totalCost = 0
 
-        #calculate cost of SKU A items, 50 each and 3 for 130
+        #calculate cost of SKU A items, 5A > 3A > individual
         a = items['A']
         totalCost += (a//3)*130 + (a%3)*50
         #calculate cost of SKU B items, 30 each and 2 for 45
@@ -26,4 +26,5 @@ class CheckoutSolution:
         totalCost += items['D'] * 15
 
         return totalCost
+
 
