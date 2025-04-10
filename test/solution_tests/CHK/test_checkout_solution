@@ -3,18 +3,19 @@ from solutions.CHK.checkout_solution import CheckoutSolution
 
 class TestCheckout():
     def test_specialOffers(self):
-        assert CheckoutSolution("AAA") == 130
-        assert CheckoutSolution("AAAA") == 180
-        assert CheckoutSolution("BB") == 45
-        assert CheckoutSolution("BBB") == 75
+        assert CheckoutSolution().checkout("AAA") == 130
+        assert CheckoutSolution().checkout("AAAA") == 180
+        assert CheckoutSolution().checkout("BB") == 45
+        assert CheckoutSolution().checkout("BBB") == 75
 
     def test_regular(self):
-        assert CheckoutSolution("A") == 50
-        assert CheckoutSolution("B") == 30
-        assert CheckoutSolution("C") == 20
-        assert CheckoutSolution("D") == 15
+        assert CheckoutSolution().checkout("A") == 50
+        assert CheckoutSolution().checkout("B") == 30
+        assert CheckoutSolution().checkout("C") == 20
+        assert CheckoutSolution().checkout("D") == 15
     
     def test_invalid(self):
-        assert CheckoutSolution("E") == -1
-        assert CheckoutSolution(123) == -1
+        assert CheckoutSolution().checkout("F") == -1
+        assert CheckoutSolution().checkout(123) == -1
     
+
