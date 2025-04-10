@@ -15,8 +15,6 @@ class TestHello():
         assert CheckoutSolution("D") == 15
     
     def test_invalid(self):
-        assert CheckoutSolution("E") == 50
-        assert CheckoutSolution("B") == 30
-        assert CheckoutSolution("C") == 20
-        assert CheckoutSolution("D") == 15
-
+        assert CheckoutSolution("E") == -1
+        assert CheckoutSolution(123) == -1
+    
