@@ -1,0 +1,6 @@
+from solutions.CHK.checkout_solution import CheckoutSolution
+
+
+class TestHello():
+    def test_totals(self):
+        assert CheckoutSolution("AAA"), 50
