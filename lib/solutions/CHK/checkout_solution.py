@@ -63,7 +63,7 @@ class CheckoutSolution:
 
         m = items['M']
         n = items['N']
-        freeM =  e//3
+        freeM =  n//3
         if (m - freeM) < 0:
             m = 0
         else:
@@ -78,8 +78,8 @@ class CheckoutSolution:
         totalCost +=(p//5)*200
         totalCost += (p%5)*50
 
-        q = items['q']
-        r = items['r']
+        q = items['Q']
+        r = items['R']
         freeQ =  r//3
         if (q - freeQ) < 0:
             q = 0
@@ -97,16 +97,22 @@ class CheckoutSolution:
         paidForU =  u - (u//4)
         totalCost += paidForU * 40
     
-        v = items['A']
-        totalCost += (a//5) * 200
-        a%=5
-        totalCost += (a//3) * 130
-        totalCost += (a%3)* 50
+        v = items['V']
+        totalCost += (v//3) * 130
+        v%=3
+        totalCost += (v//2) * 90
+        totalCost += (v%2)* 50
 
+        totalCost += items['W'] * 20
 
+        totalCost += items['X'] * 90
 
+        totalCost += items['Y'] * 10
+
+        totalCost += items['Z'] * 50
 
         return totalCost
+
 
 
 
