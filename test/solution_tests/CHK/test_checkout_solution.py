@@ -26,6 +26,8 @@ class TestCheckout():
     def test_specialOffers_F(self):
         assert CheckoutSolution().checkout("FFFFF") == 40
         assert CheckoutSolution().checkout("FFF") == 20
+        assert CheckoutSolution().checkout("FFFF") == 30
+
 
 
 
