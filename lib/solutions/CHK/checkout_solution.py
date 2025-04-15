@@ -95,12 +95,19 @@ class CheckoutSolution:
 
         u = items['U']
         paidForU =  u - (u//4)
-        totalCost += paidFor * 10
+        totalCost += paidForU * 40
+    
+        v = items['A']
+        totalCost += (a//5) * 200
+        a%=5
+        totalCost += (a//3) * 130
+        totalCost += (a%3)* 50
 
 
 
 
         return totalCost
+
 
 
 
