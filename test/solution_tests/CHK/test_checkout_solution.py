@@ -38,4 +38,3 @@ class TestCheckout():
         assert CheckoutSolution().checkout("VVV") == 130
         
         
-
