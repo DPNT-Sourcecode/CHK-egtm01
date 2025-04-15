@@ -57,7 +57,7 @@ class CheckoutSolution:
 
         k = items['K']
         totalCost +=(k//2)*150
-        totalCost+=- (k%2)*80
+        totalCost+= (k%2)*80
         
         totalCost += items['L']*90
 
@@ -72,10 +72,26 @@ class CheckoutSolution:
 
         totalCost += items['N'] * 40
 
+        totalCost += items['O']*10
+
+        p = items['P']
+        totalCost +=(p//5)*200
+        totalCost += (p%5)*50
+
+        q = items['q']
+        r = items['r']
+        freeQ =  r//3
+        if (q - freeQ) < 0:
+            b = 0
+        else:
+            b -= freeB
+        totalCost += (b//2)*45 + (b%2)*30
+
 
 
 
         return totalCost
+
 
 
 
