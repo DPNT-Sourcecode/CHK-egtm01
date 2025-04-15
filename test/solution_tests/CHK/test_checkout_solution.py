@@ -32,9 +32,10 @@ class TestCheckout():
         assert CheckoutSolution().checkout("HHHHH") == 45
         assert CheckoutSolution().checkout("HHHHHHHHHH") == 80
         assert CheckoutSolution().checkout("NNNM") == 120
-        assert CheckoutSolution().checkout("RRRQ") == 180
+        assert CheckoutSolution().checkout("RRRQ") == 150
         assert CheckoutSolution().checkout("UUUU") == 120
         assert CheckoutSolution().checkout("VV") == 90
         assert CheckoutSolution().checkout("VVV") == 130
         
         
+
