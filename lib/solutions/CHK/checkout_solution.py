@@ -7,7 +7,7 @@ class CheckoutSolution:
             return -1
          
         #initalise the counts of each item
-        items = {'A':0,'B':0,'C':0,'D':0,'E':0}
+        items = {'A':0,'B':0,'C':0,'D':0,'E':0, 'F':0}
         #go through each item iteratively and increment
         for item in skus:
             if item not in items:
@@ -40,4 +40,5 @@ class CheckoutSolution:
         totalCost += items['E'] * 40
 
         return totalCost
+
 
