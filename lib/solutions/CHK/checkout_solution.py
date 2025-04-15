@@ -55,10 +55,18 @@ class CheckoutSolution:
 
         totalCost += items['J']*60
 
+        k = items['K']
+        totalCost +=(k//2)*150
+        totalCost+=- (k%2)*80
+        
+        totalCost += items['L']*90
+
+        totalCost += items['M']*15
         
 
 
 
         return totalCost
+
 
 
