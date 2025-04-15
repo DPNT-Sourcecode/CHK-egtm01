@@ -39,12 +39,14 @@ class CheckoutSolution:
 
         totalCost += items['E'] * 40
 
+        # 2F Get 1 Free
         f = items['F']
         paidFor =  f - (f//3)
         totalCost += paidFor * 10
 
         totalCost += items['G']*20
 
+        #10 for 80, 5 for 45
         h = items['H']
         totalCost += (h//10)*80
         h%=10
@@ -55,12 +57,14 @@ class CheckoutSolution:
 
         totalCost += items['J']*60
 
+        #2K for 150
         k = items['K']
         totalCost +=(k//2)*150
         totalCost+= (k%2)*80
         
         totalCost += items['L']*90
 
+        # 3N Get 1M free
         m = items['M']
         n = items['N']
         freeM =  n//3
@@ -74,10 +78,12 @@ class CheckoutSolution:
 
         totalCost += items['O']*10
 
+        #5 for 200
         p = items['P']
         totalCost +=(p//5)*200
         totalCost += (p%5)*50
 
+        # 3Q for 80, 3R Get 1Q Free
         q = items['Q']
         r = items['R']
         freeQ =  r//3
@@ -93,10 +99,12 @@ class CheckoutSolution:
 
         totalCost += items['T'] * 20
 
+        # 3U get 1 Free
         u = items['U']
         paidForU =  u - (u//4)
         totalCost += paidForU * 40
     
+        #3V for 130, 2V fr 90
         v = items['V']
         totalCost += (v//3) * 130
         v%=3
@@ -112,6 +120,7 @@ class CheckoutSolution:
         totalCost += items['Z'] * 50
 
         return totalCost
+
 
 
 
