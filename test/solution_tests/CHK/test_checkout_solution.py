@@ -15,7 +15,7 @@ class TestCheckout():
         assert CheckoutSolution().checkout("D") == 15
     
     def test_invalid(self):
-        assert CheckoutSolution().checkout("F") == -1
+        assert CheckoutSolution().checkout("Z") == -1
         assert CheckoutSolution().checkout(123) == -1
     
     def test_specialOffers_E(self):
@@ -26,5 +26,6 @@ class TestCheckout():
     def test_specialOffers_F(self):
         assert CheckoutSolution().checkout("FFFFF") == 40
         assert CheckoutSolution().checkout("FFF") == 20
+
 
 
