@@ -82,15 +82,26 @@ class CheckoutSolution:
         r = items['r']
         freeQ =  r//3
         if (q - freeQ) < 0:
-            b = 0
+            q = 0
         else:
-            b -= freeB
-        totalCost += (b//2)*45 + (b%2)*30
+            q -= freeQ
+        totalCost += (q//3)*80 + (q%3)*30
+
+        totalCost += items['R'] * 50
+
+        totalCost += items['S'] * 30
+
+        totalCost += items['T'] * 20
+
+        u = items['U']
+        paidForU =  u - (u//4)
+        totalCost += paidFor * 10
 
 
 
 
         return totalCost
+
 
 
 
