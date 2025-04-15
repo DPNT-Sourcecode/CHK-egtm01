@@ -39,6 +39,11 @@ class CheckoutSolution:
 
         totalCost += items['E'] * 40
 
+        f = items['F']
+        remaining =  f%2
+        totalCost += (f*10)-(remaining*10)
+
         return totalCost
+
 
 
