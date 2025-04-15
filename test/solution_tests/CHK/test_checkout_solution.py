@@ -31,7 +31,7 @@ class TestCheckout():
     def test_specialOffers_R4(self):
         assert CheckoutSolution().checkout("HHHHH") == 45
         assert CheckoutSolution().checkout("HHHHHHHHHH") == 80
-        assert CheckoutSolution().checkout("NNNM") == 160
+        assert CheckoutSolution().checkout("NNNM") == 120
         assert CheckoutSolution().checkout("RRRQ") == 180
         assert CheckoutSolution().checkout("UUUU") == 120
         assert CheckoutSolution().checkout("VV") == 90
