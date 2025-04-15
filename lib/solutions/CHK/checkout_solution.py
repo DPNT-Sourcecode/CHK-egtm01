@@ -43,8 +43,22 @@ class CheckoutSolution:
         paidFor =  f - (f//3)
         totalCost += paidFor * 10
 
-        totalCost += ite
+        totalCost += items['G']*20
+
+        h = items['H']
+        totalCost += (h//10)*80
+        h%=10
+        totalCost += (h//5)*45
+        totalCost += (h%5)*10
+
+        totalCost += items['I']*35
+
+        totalCost += items['J']*60
+
+        
+
 
 
         return totalCost
+
 
