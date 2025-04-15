@@ -68,13 +68,13 @@ class CheckoutSolution:
         m = items['M']
         n = items['N']
         freeM =  n//3
-        if (m - freeM) < 0:
-            m = 0
-        else:
+        if m> freeM:
             m -= freeM
-        totalCost += (m%3)*15
+        else:
+            m = 0
+        totalCost += m*15
 
-        totalCost += items['N'] * 40
+        totalCost += n * 40
 
         totalCost += items['O']*10
 
@@ -120,12 +120,4 @@ class CheckoutSolution:
         totalCost += items['Z'] * 50
 
         return totalCost
-
-
-
-
-
-
-
-
 
