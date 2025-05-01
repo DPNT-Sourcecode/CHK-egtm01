@@ -38,4 +38,6 @@ class TestCheckout():
         assert CheckoutSolution().checkout("VVV") == 130
         
     def test_groupDiscounts_R5(self):
-        assert CheckoutSolution().checkout("STXYZ") == 
+        assert CheckoutSolution().checkout("STXYZ") == 82
+        assert CheckoutSolution().checkout("SSS") == 45
+        assert CheckoutSolution().checkout("SSSZ") == 65

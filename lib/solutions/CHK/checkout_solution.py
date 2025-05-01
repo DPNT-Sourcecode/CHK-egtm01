@@ -129,7 +129,3 @@ class CheckoutSolution:
 
         return totalCost
 
-
-
-
-
