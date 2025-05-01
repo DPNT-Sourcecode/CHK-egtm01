@@ -121,9 +121,14 @@ class CheckoutSolution:
     
         #sort group item from most to least expensive
         groupItems.sort(reverse=True)
-        
+        groupCount = len(groupItems)
+        #apply the group discount for as many full groups as possible.
+        totalCost += (groupCount//3)*45
+        #
+        totalCost += sum(groupItems[(groupCount//3)*3:])
 
         return totalCost
+
 
 
 
