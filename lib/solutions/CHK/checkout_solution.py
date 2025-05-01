@@ -95,10 +95,6 @@ class CheckoutSolution:
 
         totalCost += items['R'] * 50
 
-        totalCost += items['S'] * 20
-
-        totalCost += items['T'] * 20
-
         # 3U get 1 Free
         u = items['U']
         paidForU =  u - (u//4)
@@ -113,12 +109,9 @@ class CheckoutSolution:
 
         totalCost += items['W'] * 20
 
-        totalCost += items['X'] * 17
-
-        totalCost += items['Y'] * 20
-
-        totalCost += items['Z'] * 21
+        groupedItems = {'S':20, 'T':20, }
 
         return totalCost
+
 
 
