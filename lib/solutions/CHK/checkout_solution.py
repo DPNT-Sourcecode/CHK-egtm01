@@ -117,8 +117,10 @@ class CheckoutSolution:
                 groupItems.append(groupPrices[item])
             items[item] = 0
     
+        groupItems
 
         return totalCost
+
 
 
 
