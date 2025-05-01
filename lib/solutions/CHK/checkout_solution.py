@@ -113,7 +113,7 @@ class CheckoutSolution:
         groupPrices = {'S':20, 'T':20,'X':17, 'Y':20, 'Z':21}
         groupItems = []
 
-        #append all items
+        #append all items 
         for item in groupPrices:
             for i in range(items[item]):
                 groupItems.append(groupPrices[item])
@@ -123,5 +123,6 @@ class CheckoutSolution:
         groupItems.sort(reverse=True)
 
         return totalCost
+
 
 
