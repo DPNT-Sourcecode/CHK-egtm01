@@ -59,8 +59,8 @@ class CheckoutSolution:
 
         #2K for 150
         k = items['K']
-        totalCost +=(k//2)*150
-        totalCost+= (k%2)*80
+        totalCost +=(k//2)*120
+        totalCost+= (k%2)*70
         
         totalCost += items['L']*90
 
@@ -95,7 +95,7 @@ class CheckoutSolution:
 
         totalCost += items['R'] * 50
 
-        totalCost += items['S'] * 30
+        totalCost += items['S'] * 20
 
         totalCost += items['T'] * 20
 
@@ -113,11 +113,12 @@ class CheckoutSolution:
 
         totalCost += items['W'] * 20
 
-        totalCost += items['X'] * 90
+        totalCost += items['X'] * 17
 
-        totalCost += items['Y'] * 10
+        totalCost += items['Y'] * 20
 
-        totalCost += items['Z'] * 50
+        totalCost += items['Z'] * 21
 
         return totalCost
+
 
