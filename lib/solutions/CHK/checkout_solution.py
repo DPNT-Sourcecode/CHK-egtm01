@@ -109,9 +109,13 @@ class CheckoutSolution:
 
         totalCost += items['W'] * 20
 
-        groupedItems = {'S':20, 'T':20, }
+        groupPrices = {'S':20, 'T':20,'X':17, 'Y':20, 'Z':21}
+        groupItems = []
+
+        for item in group_prices
 
         return totalCost
+
 
 
 
