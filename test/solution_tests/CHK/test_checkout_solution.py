@@ -37,4 +37,5 @@ class TestCheckout():
         assert CheckoutSolution().checkout("VV") == 90
         assert CheckoutSolution().checkout("VVV") == 130
         
-        
+    def test_groupDiscounts_R5(self):
+        assert CheckoutSolution().checkout("STXYZ") == 

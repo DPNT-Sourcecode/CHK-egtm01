@@ -124,7 +124,7 @@ class CheckoutSolution:
         groupCount = len(groupItems)
         #apply the group discount for as many full groups as possible.
         totalCost += (groupCount//3)*45
-        #
+        #any items not part of the complete group will be added to the total cost
         totalCost += sum(groupItems[(groupCount//3)*3:])
 
         return totalCost
